@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TutorCollection.com</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script src="jquery/jquery.js"></script>
+        <script src="jquery/jquery.validate.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#formTutor").validate();
+            });
+        </script>
+        <style type="text/css">
+        label.error {
+            padding-left: 10.9em;
+            }
+            </style>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+    </head>    
+    <body>
+        <div>
+            <span class="reference">
+                <a href="http://tutorcollection.com">back Tutor Collection</a>
+            </span>
+        </div>
+        <div id="content">
+            <h1>Credit Form To : TutorCollection.com</h1>
+            <div id="wrapper">
+                <div id="steps">
+                    <form id="formTutor" name="formTutor" action="" method="post">
+                        <fieldset class="step">
+                            <legend>Personal Details</legend>
+                            <p>
+                                <label for="name">Full Name</label>
+                                <input id="name" name="name" type="text" class="required" minlength="3" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="country">Email</label>
+                                <input id="country" name="country" type="text" class="required email" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="phone">Phone</label>
+                                <input id="phone" name="phone" placeholder="e.g. +351215555555" type="tel" class="required number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="website">Website</label>
+                                <input id="website" name="website" placeholder="e.g. http://www.tutorcollection.com" type="tel" class="required url" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p class="submit">
+                                <button id="registerButton" class="submit" type="submit">Register</button>
+                            </p>
+                        </fieldset>                        
+            </div>
+        </div>
+		</div>
+    </body>
+</html>
